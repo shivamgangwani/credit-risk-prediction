@@ -25,15 +25,13 @@ Credit providers need to distinguish between borrowers who are likely to remain 
 
 The objective of this project is to estimate:
 
-[
-P(Y_i = 1 \mid X_i)
-]
+$P(Y_i = 1 \mid X_i)$
 
 where:
 
-* (Y_i = 1) if borrower (i) experiences serious delinquency within the following two years;
-* (Y_i = 0) otherwise;
-* (X_i) represents the borrower's financial and credit characteristics observed at the time of prediction.
+* $(Y_i = 1)$ if borrower ($i$) experiences serious delinquency within the following two years;
+* $(Y_i = 0)$ otherwise;
+* $(X_i)$ represents the borrower's financial and credit characteristics observed at the time of prediction.
 
 This is a **cross-sectional binary classification problem at the borrower level**.
 
@@ -89,9 +87,7 @@ One observation has `age = 0`. This is treated as an invalid observation and rem
 
 Several highly right-skewed predictors are transformed using:
 
-[
-\log(1+x)
-]
+$\log(1+x)$
 
 The transformed variables are then standardised where appropriate.
 
